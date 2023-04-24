@@ -3,13 +3,7 @@ import pickle
 import pandas as pd 
 import streamlit as st
 from PIL import Image 
-import sklearn
-from sklearn.linear_model import LogisticRegression
-from sklearn.pipeline import Pipeline
-from sklearn.compose import ColumnTransformer
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
+
 
 
 
