@@ -3,9 +3,7 @@ import pickle
 import pandas as pd 
 import streamlit as st
 from PIL import Image 
-import pythoncom
-import win32com.client
-speaker = win32com.client.Dispatch("SAPI.SpVoice",pythoncom.CoInitialize())
+
 
 
 image = Image.open('ipl3.png')
