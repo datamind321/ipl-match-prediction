@@ -64,11 +64,12 @@ if st.button('Predict Probability'):
     result=pipe.predict_proba(input_df)
     loss=result[0][0]
     win=result[0][1] 
-
-   
-    st.header(batting_team +'- '+str(round(win*100)) + "%") 
     
-    st.header(bowling_team +'- '+str(round(loss*100)) + "%")  
+    if batting_team==bowling_team:
+        st.error("Both teams are same !!!")
+    else:
+        st.header(batting_team +'- '+str(round(win*100)) + "%") 
+        st.header(bowling_team +'- '+str(round(loss*100)) + "%")  
 
     
     
